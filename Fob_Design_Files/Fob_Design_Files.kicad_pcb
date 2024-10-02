@@ -1577,7 +1577,7 @@
 		(uuid "52748237-8fcf-45a3-a275-7f6c115ce29e")
 		(at 170.705 85.019 180)
 		(property "Reference" "U1"
-			(at -0.068 -2.2064 360)
+			(at -0.068 -2.2064 0)
 			(layer "F.SilkS")
 			(uuid "0d819f1c-685e-417e-9fcb-98e45386d6a4")
 			(effects
@@ -1588,7 +1588,7 @@
 			)
 		)
 		(property "Value" "MAX16054AZT_T"
-			(at 4.4024 2.1936 360)
+			(at 4.4024 2.1936 0)
 			(layer "F.Fab")
 			(uuid "983ca53b-3ee1-4734-bd37-2bfdb76b0e93")
 			(effects
@@ -1599,7 +1599,7 @@
 			)
 		)
 		(property "Footprint" "MAX16054AZT_T:SOT95P275X110-6N"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "45b5064d-6d2c-4d64-98a0-277a1f70a891")
@@ -1611,7 +1611,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1ac84bf1-b903-406a-bf54-53a6c67f87a4")
@@ -1623,7 +1623,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "39bde7a1-43bf-493c-90ed-0339c0fccac1")
@@ -3921,7 +3921,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C5"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "d3d364d9-a95c-4f4d-8214-f7b2b5076720")
 			(effects
@@ -3932,7 +3932,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "2200dc7c-15ec-42f1-a02d-b4d2496d96fb")
 			(effects
@@ -4087,7 +4087,7 @@
 			(uuid "a21f0ae8-f8ee-46cb-9edf-fab5568f4267")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "cf5772d8-b713-48b2-a713-83178a64681c")
 			(effects
@@ -4560,7 +4560,7 @@
 		(descr "DDC (R-PDSO-G5)")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC2"
-			(at 0.107 2.86 360)
+			(at 0.107 2.86 0)
 			(layer "F.SilkS")
 			(uuid "b15bf3d6-0018-4444-8dd9-c0dd2c066bd7")
 			(effects
@@ -4571,7 +4571,7 @@
 			)
 		)
 		(property "Value" "TLV70030DDCT"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "604483fc-dbc5-4f40-bada-44a291bc2dda")
@@ -4583,7 +4583,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys_Parts:SOT95P280X110-5N"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "26502917-4041-4287-a90b-50d04d443dd2")
@@ -4595,7 +4595,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/tlv700"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c076963a-ecbc-487f-baac-a5e393405ee4")
@@ -4607,7 +4607,7 @@
 			)
 		)
 		(property "Description" "Texas Instruments TLV70030DDCT, Low Noise LDO Voltage Regulator, 200mA, 3 V 2%, 2  5.5 Vin, 5-Pin SOT"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ebba471b-8ce6-41dc-8cab-7b217cb1034c")
@@ -4828,7 +4828,7 @@
 			(uuid "64a17a9c-e782-45f9-91c5-a956b3192d42")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "f753d297-56f8-439a-b870-7ea1da11c6c2")
 			(effects
@@ -6835,7 +6835,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "cc6c8eeb-a397-4a4c-830c-063762cbaed7")
-		(at 192.278 81.788)
+		(at 190.246 81.788)
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J1"
@@ -8814,8 +8814,8 @@
 		)
 	)
 	(gr_rect
-		(start 146.177 42.164)
-		(end 194.945 118.999)
+		(start 147.447 42.164)
+		(end 193.04 118.999)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -8823,5 +8823,71 @@
 		(fill none)
 		(layer "Edge.Cuts")
 		(uuid "fd910a24-7ca7-4dc7-a94d-e16b72ad12a5")
+	)
+	(dimension
+		(type aligned)
+		(layer "Edge.Cuts")
+		(uuid "25d4b762-1c0c-4314-8273-25bdd07b12ec")
+		(pts
+			(xy 147.447 42.164) (xy 193.04 42.164)
+		)
+		(height -5.842)
+		(gr_text "45.5930 mm"
+			(at 170.2435 35.172 0)
+			(layer "Edge.Cuts")
+			(uuid "25d4b762-1c0c-4314-8273-25bdd07b12ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.05)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type aligned)
+		(layer "Edge.Cuts")
+		(uuid "8f8346ed-9047-4d52-91ee-f3cbe719245b")
+		(pts
+			(xy 147.447 118.999) (xy 147.447 42.164)
+		)
+		(height -7.112)
+		(gr_text "76.8350 mm"
+			(at 139.185 80.5815 90)
+			(layer "Edge.Cuts")
+			(uuid "8f8346ed-9047-4d52-91ee-f3cbe719245b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.05)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
 	)
 )
