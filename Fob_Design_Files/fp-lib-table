@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "CC1101")(type "KiCad")(uri "${KICAD8_3RD_PARTY}/CC1101RGPR/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "MAX16054AZT_T")(type "KiCad")(uri "${KICAD8_3RD_PARTY}/MAX16054AZT_T")(options "")(descr ""))
+  (lib (name "ANT-315-HESM")(type "KiCad")(uri "${KICAD8_3RD_PARTY}/ANT-315-HESM")(options "")(descr ""))
+)
