@@ -2187,6 +2187,182 @@
 				)
 			)
 		)
+		(symbol "Regulator_Linear:TLV70028_SOT353"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TLV70028_SOT353"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv700.pdf"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "200mA Low Dropout Voltage Regulator, Fixed Output 2.8V, SC70-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "200mA LDO Regulator Fixed Positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT*353*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TLV70028_SOT353_0_1"
+				(rectangle
+					(start -5.08 4.445)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TLV70028_SOT353_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "SamacSys_Parts:BU2032SM-JJ-GTR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2770,211 +2946,6 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:TLV70030DDCT"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "IC"
-				(at 21.59 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "TLV70030DDCT"
-				(at 21.59 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "SOT95P280X110-5N"
-				(at 21.59 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/gpn/tlv700"
-				(at 21.59 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Texas Instruments TLV70030DDCT, Low Noise LDO Voltage Regulator, 200mA, 3 V 2%, 2  5.5 Vin, 5-Pin SOT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "1.1"
-				(at 21.59 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "595-TLV70030DDCT"
-				(at 21.59 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV70030DDCT?qs=6805eV47Hhb2U71qdXa%252BPw%3D%3D"
-				(at 21.59 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Texas Instruments"
-				(at 21.59 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "TLV70030DDCT"
-				(at 21.59 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "TLV70030DDCT_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 20.32 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 25.4 0 180)
-					(length 5.08)
-					(name "N/C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -2.54 180)
-					(length 5.08)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3V0"
 			(power)
 			(pin_numbers hide)
@@ -3193,10 +3164,16 @@
 		)
 	)
 	(junction
-		(at 140.97 80.01)
+		(at 130.81 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09ebf4dd-88fe-4f7f-abec-eafafe64c1ff")
+	)
+	(junction
+		(at 38.1 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "151e95ba-70fc-40a7-8eac-9d2e09be2f12")
 	)
 	(junction
 		(at 184.15 128.27)
@@ -3290,13 +3267,9 @@
 		(at 204.47 67.31)
 		(uuid "d21686ab-b172-42ef-82f0-03bad25aa4a6")
 	)
-	(no_connect
-		(at 133.35 77.47)
-		(uuid "ec86034a-1e93-4b51-8918-0db2f618e721")
-	)
 	(wire
 		(pts
-			(xy 143.51 80.01) (xy 140.97 80.01)
+			(xy 133.35 77.47) (xy 130.81 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3326,13 +3299,13 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 80.01) (xy 102.87 80.01)
+			(xy 38.1 101.6) (xy 38.1 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1fabc233-8028-4bc2-9fc1-6838c41359fa")
+		(uuid "25a95735-25fd-42fd-a8d2-7f8464dcac0e")
 	)
 	(wire
 		(pts
@@ -3376,7 +3349,17 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 80.01) (xy 140.97 80.01)
+			(xy 36.83 99.06) (xy 38.1 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "394a80ce-440c-421b-b16a-cd9c050c230c")
+	)
+	(wire
+		(pts
+			(xy 123.19 77.47) (xy 130.81 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3416,7 +3399,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 82.55) (xy 107.95 93.98)
+			(xy 107.95 80.01) (xy 107.95 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3433,16 +3416,6 @@
 			(type default)
 		)
 		(uuid "4d6c783d-4959-48d5-a421-cdc784bae06f")
-	)
-	(wire
-		(pts
-			(xy 102.87 80.01) (xy 102.87 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53cdbc4f-6052-4108-8ead-f3a51e88cac7")
 	)
 	(wire
 		(pts
@@ -3626,6 +3599,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 99.06) (xy 39.37 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4a00f7d-3a7c-4586-8743-37169efe7947")
+	)
+	(wire
+		(pts
 			(xy 191.77 36.83) (xy 191.77 44.45)
 		)
 		(stroke
@@ -3653,6 +3636,16 @@
 			(type default)
 		)
 		(uuid "da82fe5e-e2f0-4ae2-86f7-fecd7e4cb9e9")
+	)
+	(wire
+		(pts
+			(xy 115.57 88.9) (xy 115.57 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e465a58d-c88e-4a51-a3f9-8044ab5015f0")
 	)
 	(wire
 		(pts
@@ -3884,7 +3877,7 @@
 	)
 	(global_label "SWDIO"
 		(shape input)
-		(at 232.41 74.93 180)
+		(at 228.6 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3894,7 +3887,7 @@
 		)
 		(uuid "3238027f-ff55-412f-aadf-34b50bd1b9df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 223.5586 74.93 0)
+			(at 219.7486 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4170,7 +4163,7 @@
 	)
 	(global_label "VDD"
 		(shape input)
-		(at 143.51 80.01 0)
+		(at 133.35 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4180,7 +4173,7 @@
 		)
 		(uuid "70446403-c358-409c-910b-7dcb4312fce3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.1238 80.01 0)
+			(at 139.9638 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4280,7 +4273,7 @@
 	)
 	(global_label "PWR_DWN"
 		(shape input)
-		(at 39.37 99.06 180)
+		(at 36.83 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4290,7 +4283,7 @@
 		)
 		(uuid "917198c7-dfcb-41ad-b2d4-16600d892df3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 27.3739 99.06 0)
+			(at 24.8339 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4302,7 +4295,7 @@
 	)
 	(global_label "VDD"
 		(shape input)
-		(at 232.41 72.39 180)
+		(at 228.6 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4312,7 +4305,7 @@
 		)
 		(uuid "97bf734b-689c-48d2-84bf-234c5b944237")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 225.7962 72.39 0)
+			(at 221.9862 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4676,7 +4669,7 @@
 	)
 	(global_label "SWCLK"
 		(shape input)
-		(at 232.41 77.47 180)
+		(at 228.6 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4686,7 +4679,7 @@
 		)
 		(uuid "fba52983-f097-467c-8b54-d7a8d36775fd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 223.1958 77.47 0)
+			(at 219.3858 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5048,72 +5041,6 @@
 			(project ""
 				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
 					(reference "S1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 102.87 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04ca111b-ceee-4cad-a67e-1bedba69762e")
-		(property "Reference" "#PWR05"
-			(at 102.87 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 102.87 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9d40ec8c-c8af-467a-a6fa-cbfa92b7e08e")
-		)
-		(instances
-			(project "Fob_Design_Files"
-				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -5537,6 +5464,73 @@
 			(project ""
 				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 38.1 105.41 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2adb13b1-af3c-4192-a392-3e92e7dc73aa")
+		(property "Reference" "R2"
+			(at 33.274 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 35.814 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 39.878 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 38.1 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01512f58-ddbb-4140-ad72-f020b4110460")
+		)
+		(pin "2"
+			(uuid "173b0f46-5b18-4c46-ae98-31ef6c04c07a")
+		)
+		(instances
+			(project "Fob_Design_Files"
+				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6728,135 +6722,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:TLV70030DDCT")
-		(at 107.95 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64f0cea9-ac1c-41db-9136-69d215a86404")
-		(property "Reference" "IC2"
-			(at 120.65 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TLV70030DDCT"
-			(at 120.65 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:SOT95P280X110-5N"
-			(at 129.54 172.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/tlv700"
-			(at 129.54 272.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Texas Instruments TLV70030DDCT, Low Noise LDO Voltage Regulator, 200mA, 3 V 2%, 2  5.5 Vin, 5-Pin SOT"
-			(at 107.95 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.1"
-			(at 129.54 472.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "595-TLV70030DDCT"
-			(at 129.54 572.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV70030DDCT?qs=6805eV47Hhb2U71qdXa%252BPw%3D%3D"
-			(at 129.54 672.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 129.54 772.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "TLV70030DDCT"
-			(at 129.54 872.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02b136fc-6f62-49bc-9703-b8602957feab")
-		)
-		(pin "5"
-			(uuid "2378765f-af2c-4ae8-a665-5d92b36d30db")
-		)
-		(pin "4"
-			(uuid "b48619d7-4a4b-4bbc-ac90-45227b6d4c02")
-		)
-		(pin "2"
-			(uuid "1b6f9213-a351-47ad-b404-26a9d7ac3d85")
-		)
-		(pin "3"
-			(uuid "f8331d06-bfe0-4812-a23b-d509009185f8")
-		)
-		(instances
-			(project ""
-				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
-					(reference "IC2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MCU_ST_STM32C0:STM32C011F4Px")
 		(at 189.23 67.31 0)
 		(unit 1)
@@ -7053,6 +6918,150 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 115.57 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d92f73a-2dc2-4e5d-a8f9-b453c35a5589")
+		(property "Reference" "#PWR05"
+			(at 115.57 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.57 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 115.57 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "667b784c-0699-47e6-a6ae-178af6711610")
+		)
+		(instances
+			(project "Fob_Design_Files"
+				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:TLV70028_SOT353")
+		(at 115.57 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "845970d0-ec5e-4d5c-a18f-16eba0702975")
+		(property "Reference" "U5"
+			(at 115.57 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV70028_SOT353"
+			(at 115.57 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+			(at 115.57 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv700.pdf"
+			(at 115.57 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "200mA Low Dropout Voltage Regulator, Fixed Output 2.8V, SC70-5"
+			(at 115.57 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b1a57f91-8a4f-4933-815c-de65b75d5ec2")
+		)
+		(pin "1"
+			(uuid "2c573d17-41db-4d51-854b-862b3284167c")
+		)
+		(pin "2"
+			(uuid "9ca70ec4-5b24-4da2-b697-ce93c5dd88a6")
+		)
+		(pin "4"
+			(uuid "e531c28a-9320-41d7-b638-557824df707f")
+		)
+		(pin "5"
+			(uuid "995758ec-d0b5-463b-a9e1-f58960161ed1")
+		)
+		(instances
+			(project ""
+				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 271.78 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7185,7 +7194,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 140.97 83.82 0)
+		(at 130.81 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7193,7 +7202,7 @@
 		(dnp no)
 		(uuid "8e6e686d-e27f-4645-a5b9-bc0e5d95bb30")
 		(property "Reference" "C2"
-			(at 144.526 84.074 0)
+			(at 134.366 81.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7202,7 +7211,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 144.526 86.614 0)
+			(at 134.366 84.074 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7211,7 +7220,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 141.9352 87.63 0)
+			(at 131.7752 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7220,7 +7229,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 83.82 0)
+			(at 130.81 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7229,7 +7238,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 140.97 83.82 0)
+			(at 130.81 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7788,7 +7797,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 237.49 77.47 180)
+		(at 233.68 77.47 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7797,7 +7806,7 @@
 		(fields_autoplaced yes)
 		(uuid "a672f54b-a21c-4632-8124-e37f68a4c558")
 		(property "Reference" "J1"
-			(at 238.76 74.9299 0)
+			(at 234.95 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7806,7 +7815,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Pin"
-			(at 238.76 77.4699 0)
+			(at 234.95 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7815,7 +7824,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 237.49 77.47 0)
+			(at 233.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7824,7 +7833,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 237.49 77.47 0)
+			(at 233.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7833,7 +7842,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 237.49 77.47 0)
+			(at 233.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8134,7 +8143,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 140.97 87.63 0)
+		(at 130.81 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8143,7 +8152,7 @@
 		(fields_autoplaced yes)
 		(uuid "c8ff138a-a6d9-4cfc-9776-8a21f435d63c")
 		(property "Reference" "#PWR07"
-			(at 140.97 93.98 0)
+			(at 130.81 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8152,7 +8161,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.97 92.71 0)
+			(at 130.81 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8160,7 +8169,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 87.63 0)
+			(at 130.81 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8169,7 +8178,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 87.63 0)
+			(at 130.81 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8178,7 +8187,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 140.97 87.63 0)
+			(at 130.81 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8806,16 +8815,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 232.41 80.01 0)
+		(at 38.1 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f6e94865-002c-46d6-b3f5-6e737722b283")
-		(property "Reference" "#PWR027"
-			(at 232.41 86.36 0)
+		(uuid "f668d417-1fe6-4260-a764-680132fc9dc9")
+		(property "Reference" "#PWR028"
+			(at 38.1 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8824,7 +8833,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 232.41 85.09 0)
+			(at 38.1 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8832,7 +8841,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 232.41 80.01 0)
+			(at 38.1 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8841,7 +8850,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 80.01 0)
+			(at 38.1 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8850,7 +8859,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 232.41 80.01 0)
+			(at 38.1 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a2d26c3-f951-48db-8702-94d97869ce6f")
+		)
+		(instances
+			(project "Fob_Design_Files"
+				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 228.6 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6e94865-002c-46d6-b3f5-6e737722b283")
+		(property "Reference" "#PWR027"
+			(at 228.6 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 228.6 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
