@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LM3940")(type "Legacy")(uri "C:/Users/vasav/Downloads/ul_LM3940IT-3-3/KiCAD/2024-10-03_18-17-26.lib")(options "")(descr ""))
+)
