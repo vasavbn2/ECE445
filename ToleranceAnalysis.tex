@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Power Consumption and Battery Life Analysis for Fob Subsystem}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+In this document, we will analyze the power consumption of our fob subsystem and estimate its battery life. The two primary components that consume power are the MCU and the RF transceiver. A power latch IC will be used to provide power to the MCU only when a button is pressed, and the system will remain completely off otherwise.
+
+
+\section{Current Consumption When Off}
+\begin{itemize}
+    \item The latch IC (MAX16054) consumes \(7 \, \mu A\).
+    \item The LDO consumes less than \(1 \, \mu A\).
+\end{itemize}
+
+\section{Current Consumption During Operation}
+During active operation, the following components consume power:
+\begin{itemize}
+    \item The latch IC (MAX16054) consumes \(7 \, \mu A\).
+    \item The MCU consumes less than \(4 \, mA\).
+    \item The RF transceiver consumes \(14.7 \, mA\) in RX mode and \(30 \, mA\) in TX mode.
+\end{itemize}
+
+We estimate the total time of operation for one interaction to be 2 seconds, or \(0.0006 \, \text{hours}\). This consists of:
+\begin{itemize}
+    \item \(0.6\) seconds (\(0.0002 \, \text{hours}\)) in RX mode.
+    \item \(1.4\) seconds (\(0.0004 \, \text{hours}\)) in TX mode.
+\end{itemize}
+
+The total current consumption per interaction is:
+
+\[
+I_{\text{interaction}} = (14.7 \, \text{mA} \times 0.0002 \, \text{hours}) + (30 \, \text{mA} \times 0.0004 \, \text{hours})
+\]
+
+Simplifying:
+
+\[
+I_{\text{interaction}} \approx 0.00294 \, \text{mAh} + 0.012 \, \text{mAh} = 0.018 \, \text{mAh}
+\]
+
+\section{Daily and Monthly Consumption}
+Assuming 10 interactions per day, the daily current consumption is:
+
+\[
+I_{\text{daily}} = 10 \times 0.018 \, \text{mAh} = 0.18 \, \text{mAh/day}
+\]
+
+For a month (30 days), the total current consumption is:
+
+\[
+I_{\text{monthly}} = 30 \times 0.18 \, \text{mAh} = 5.4 \, \text{mAh/month}
+\]
+
+\section{Battery Life Estimation}
+Our target is for the fob to last at least one month on a single battery. We have identified batteries with a capacity greater than \(200 \, \text{mAh}\). Therefore, the estimated battery life is:
+
+\[
+t_{\text{life}} = \frac{200 \, \text{mAh}}{5.4 \, \text{mAh/month}} \approx 37 \, \text{months}
+\]
+
+Even if the calculated consumption is off by an order of magnitude (i.e., requiring \(54 \, \text{mAh}\) per month), the battery would still last over 3 months, which exceeds our goal.
+
+\section{Conclusion}
+The power consumption analysis demonstrates that our fob subsystem, with the use of a power latch IC and careful control of active and inactive modes, will meet the requirement of lasting at least one month on a single battery. With a \(200 \, \text{mAh}\) battery, the system has more than sufficient capacity to support this, even with significant error margins in the consumption estimate.
+
+\end{document}
