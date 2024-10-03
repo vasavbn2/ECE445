@@ -14,10 +14,10 @@
     \item The latch IC (MAX16054) consumes \(7 \, \mu A\).
     \item The LDO consumes less than \(1 \, \mu A\).
     \item 1 month is 720 hours, we will ignore the fact that during some of this duration the device will be active
-    \item \(I_{off} = 8 \mu A \cdot \frac{1 mA}{1000 \mu A} \cdot 720 \,  h = \fbox{5.75 \, mAh } \)
+    \item \(I_{off} = 8 \mu A \times \frac{1 mA}{1000 \mu A} \times 720 \, \text{hours/month} = \fbox{5.75 \, \text{mAh/month} } \)
 \end{itemize}
 
-\section{Current Consumption During Operation (1 month)}
+\section{Active Current Consumption Per Interaction}
 \begin{itemize}
     \item The latch IC (MAX16054) consumes \(0.4 \, mA\).
     \item The MCU consumes at most \(4 \, mA\) for running code from flash memory with 48 MHz clock, SPI requires \(0.2 \, mA\), the GPIOs will require \(0.1 \, mA\) each and there are 4.
@@ -53,14 +53,17 @@ I_{\text{interaction}} = I_{\text{latch}} + I_{\text{MCU}} + I_{\text{transceive
 \]
 
 \[
-I_{\text{interaction}} = 0.0192675 \, \text{mAh} \approx \fbox{0.0193 \, \text{mAh}}
+I_{\text{interaction}} = 0.0192675 \, \text{mAh} \approx \fbox{0.0193 \, \text{mAh/interaction}}
 \]
 
 \section{Monthly Consumption}
 Assuming 10 interactions per day, the monthly current consumption is:
 
 \[
-I_{\text{month}} = (I_{\text{off}}) +  (10 \times 30 \times I_{\text{interaction}}) =  5.75 \, \text{mAh/month} + 5.79 \, \text{mAh/month}
+I_{\text{month}} = (I_{\text{off}}) +  (10 \, \text{interactions/day} \times 30 \, \text{days/month} \times I_{\text{interaction}}) 
+\]
+\[
+=  5.75 \, \text{mAh/month} + 5.79 \, \text{mAh/month}
 \]
 \[
 I_{\text{month}} = \fbox{11.54  \, \text{mAh/month}}
@@ -68,15 +71,31 @@ I_{\text{month}} = \fbox{11.54  \, \text{mAh/month}}
 
 
 \section{Battery Life Estimation}
-Our target is for the fob to last at least one month on a single battery. We have identified batteries with a capacity greater than \(200 \, \text{mAh}\). Therefore, the estimated battery life is:
+Our target is for the fob to last at least one month on a single battery. We have identified batteries with a capacity greater than \(200 \, \text{mAh}\). Therefore, the estimated battery life is at least:
 
 \[
-t_{\text{life}} = \frac{200 \, \text{mAh}}{5.4 \, \text{mAh/month}} \approx 37 \, \text{months}
+t_{\text{life}} = \frac{200 \, \text{mAh}}{11.54 \, \text{mAh/month}} \approx \fbox{17 \, \text{months}}
 \]
 
-Even if the calculated consumption is off by an order of magnitude (i.e., requiring \(54 \, \text{mAh}\) per month), the battery would still last over 3 months, which exceeds our goal.
+This is 17x longer than our goal
 
-\section{Conclusion}
-The power consumption analysis demonstrates that our fob subsystem, with the use of a power latch IC and careful control of active and inactive modes, will meet the requirement of lasting at least one month on a single battery. With a \(200 \, \text{mAh}\) battery, the system has more than sufficient capacity to support this, even with significant error margins in the consumption estimate.
+\section{Modular Group Example}
+The group \( G \) consists of the non-zero integers in \( \mathbb{Z}_7 \), i.e., \( G = \{1, 2, 3, 4, 5, 6\} \).
+
+We choose \( g = 3 \) as the generator. Now, let's compute the powers of \( g \mod 7 \):
+
+\[
+\begin{aligned}
+    g^1 & = 3^1 \mod 7 = 3, \\
+    g^2 & = 3^2 \mod 7 = 9 \mod 7 = 2, \\
+    g^3 & = 3^3 \mod 7 = 27 \mod 7 = 6, \\
+    g^4 & = 3^4 \mod 7 = 81 \mod 7 = 4, \\
+    g^5 & = 3^5 \mod 7 = 243 \mod 7 = 5, \\
+    g^6 & = 3^6 \mod 7 = 729 \mod 7 = 1.
+\end{aligned}
+\]
+
+Thus, the powers of \( g = 3 \mod 7 \) generate the set \( \{1, 2, 3, 4, 5, 6\} \), which means \( g = 3 \) is a generator of the group \( G \mod 7 \).
+
 
 \end{document}
