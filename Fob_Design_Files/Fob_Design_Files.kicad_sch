@@ -754,7 +754,7 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_02x04_Counter_Clockwise"
+		(symbol "Connector_Generic:Conn_02x04_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -768,7 +768,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x04_Counter_Clockwise"
+			(property "Value" "Conn_02x04_Odd_Even"
 				(at 1.27 -7.62 0)
 				(effects
 					(font
@@ -794,7 +794,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -821,7 +821,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_02x04_Counter_Clockwise_1_1"
+			(symbol "Conn_02x04_Odd_Even_1_1"
 				(rectangle
 					(start -1.27 -4.953)
 					(end 0 -5.207)
@@ -940,7 +940,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 7.62 2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -958,7 +958,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -976,7 +976,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at 7.62 0 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -994,7 +994,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -5.08 180)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -1030,7 +1030,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
@@ -1048,7 +1048,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 2.54 180)
+					(at 7.62 -5.08 180)
 					(length 3.81)
 					(name "Pin_8"
 						(effects
@@ -3203,10 +3203,6 @@
 		(uuid "60d18588-245a-45a8-9f30-6a45a920cebc")
 	)
 	(no_connect
-		(at 199.39 57.15)
-		(uuid "7835b0ed-b61c-496b-b6e7-878b122605a3")
-	)
-	(no_connect
 		(at 199.39 49.53)
 		(uuid "c3640e9e-1c05-4aa5-8394-49c77247ee31")
 	)
@@ -3780,28 +3776,6 @@
 			)
 		)
 	)
-	(global_label "GDO2"
-		(shape input)
-		(at 171.45 62.23 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2a734555-e0d5-4c85-b2b8-8c1b3b19dc04")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.3848 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Button"
 		(shape input)
 		(at 101.6 41.91 180)
@@ -4066,6 +4040,28 @@
 			)
 		)
 	)
+	(global_label "USART_RX"
+		(shape input)
+		(at 238.76 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "47c8a71c-7226-49db-8458-e5208994232c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 251.0585 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SPI_NSS"
 		(shape input)
 		(at 303.53 58.42 180)
@@ -4084,6 +4080,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USART_RX"
+		(shape input)
+		(at 199.39 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "53b7d407-a11e-487f-9eea-980f0ee95fb9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 211.6885 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4164,7 +4182,7 @@
 			)
 			(justify left)
 		)
-		(uuid "6c3ec47b-ef55-47ee-95ed-0f5af2df9d3b")
+		(uuid "6c2ffaa4-85b0-4544-96bc-19fb58a10bd0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 245.3738 82.55 0)
 			(effects
@@ -4189,28 +4207,6 @@
 		(uuid "70446403-c358-409c-910b-7dcb4312fce3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 139.9638 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "USART_RX"
-		(shape input)
-		(at 238.76 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7718161e-006a-4e71-ae44-c8d8803b028b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 251.0585 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4260,6 +4256,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GDO0"
+		(shape input)
+		(at 171.45 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7b0a6d6f-9513-47e0-ac6f-2674995aa2ec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.3848 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4343,6 +4361,28 @@
 		(uuid "854cafa2-c390-4773-8e78-dfa2472cea6e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 250.7561 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GDO2"
+		(shape input)
+		(at 199.39 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8af248eb-2d66-4a17-b72c-99ac1f021cd3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 207.4552 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4678,28 +4718,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GDO0"
-		(shape input)
-		(at 199.39 74.93 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e53abf58-a60e-41e8-9499-d78bdd9f3bc4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 207.4552 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5150,7 +5168,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x04_Counter_Clockwise")
+		(lib_id "Connector_Generic:Conn_02x04_Odd_Even")
 		(at 231.14 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5158,7 +5176,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "05c70e27-a523-4ffe-9fe4-0ad3f705b2cd")
+		(uuid "0d8c2223-a32e-45c9-8d6f-89588516c6a5")
 		(property "Reference" "J2"
 			(at 232.41 76.2 0)
 			(effects
@@ -5167,7 +5185,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x04_Counter_Clockwise"
+		(property "Value" "Conn_02x04_Odd_Even"
 			(at 232.41 78.74 0)
 			(effects
 				(font
@@ -5193,7 +5211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 231.14 85.09 0)
 			(effects
 				(font
@@ -5202,29 +5220,29 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "3ce08870-411a-44f9-9c77-eea0de3a2345")
-		)
-		(pin "1"
-			(uuid "c0f7fa4f-4a91-4dcf-a5c0-cc91c776d81e")
-		)
-		(pin "2"
-			(uuid "ec9131cc-b431-4b1d-9ae3-98a0114ec5a9")
-		)
-		(pin "6"
-			(uuid "953540eb-0457-4e23-abca-ae2564ec546c")
-		)
-		(pin "4"
-			(uuid "6475439a-3ac0-421e-8a05-039b6db8eabf")
-		)
 		(pin "5"
-			(uuid "0c85a69a-46ff-4ab6-a67a-cae5c690120e")
+			(uuid "ed035d74-02e6-4200-a89f-fb12e19fd242")
+		)
+		(pin "3"
+			(uuid "08175c8a-ee5c-4382-911c-d5a5c7165b34")
 		)
 		(pin "7"
-			(uuid "6be4a228-fa06-4928-b35e-54a59dcc6b86")
+			(uuid "7bc606d9-7cd7-4112-bf05-2ee7fb77d515")
+		)
+		(pin "4"
+			(uuid "e0283922-95ae-4463-9ab7-0b90b1038145")
+		)
+		(pin "1"
+			(uuid "172797a6-b066-4df3-88a6-c2fb63f669c4")
+		)
+		(pin "2"
+			(uuid "6b5d0f7f-9dde-4947-9858-ba8e6ff0347b")
 		)
 		(pin "8"
-			(uuid "8a7c35c6-c3fa-41d7-b870-94498476a812")
+			(uuid "910b3800-a975-4d83-9eca-d715257588d1")
+		)
+		(pin "6"
+			(uuid "89c0f47f-c269-4b54-bddc-75508ca66879")
 		)
 		(instances
 			(project ""
@@ -5329,7 +5347,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 181.61 147.32 0)
 			(effects
 				(font
@@ -5749,7 +5767,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 39.878 105.41 90)
 			(effects
 				(font
@@ -5816,7 +5834,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 347.98 83.058 90)
 			(effects
 				(font
@@ -5952,7 +5970,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 179.3748 120.65 0)
 			(effects
 				(font
@@ -6055,6 +6073,71 @@
 			(project "Fob_Design_Files"
 				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 238.76 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4226f3df-c1cd-43a0-82e9-2b1e93366d2d")
+		(property "Reference" "#PWR09"
+			(at 238.76 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 238.76 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e12da383-c5f9-4c2f-a9ee-7909f95fe39e")
+		)
+		(instances
+			(project "Fob_Design_Files"
+				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6422,7 +6505,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 230.1748 135.89 0)
 			(effects
 				(font
@@ -7481,7 +7564,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 268.9352 88.9 0)
 			(effects
 				(font
@@ -7814,7 +7897,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 310.8452 86.36 0)
 			(effects
 				(font
@@ -8014,7 +8097,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 190.5 144.4752 0)
 			(effects
 				(font
@@ -8082,7 +8165,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 248.92 134.9248 0)
 			(effects
 				(font
@@ -8150,7 +8233,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 205.74 135.89 0)
 			(effects
 				(font
@@ -8416,7 +8499,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 194.31 128.27 0)
 			(effects
 				(font
@@ -8552,7 +8635,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 180.6448 151.13 0)
 			(effects
 				(font
@@ -8688,7 +8771,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 212.3948 135.89 0)
 			(effects
 				(font
@@ -8725,72 +8808,6 @@
 			(project "Fob_Design_Files"
 				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
 					(reference "C15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 238.76 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "edb1acc7-2cbd-4263-8de0-1693225aa483")
-		(property "Reference" "#PWR029"
-			(at 238.76 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 238.76 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 238.76 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 238.76 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 238.76 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f21a12f8-e896-42e8-8a47-8e9c923f967c")
-		)
-		(instances
-			(project "Fob_Design_Files"
-				(path "/ad2bc408-bf54-4f88-a5fb-85c0e9c3efbd"
-					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -8888,7 +8905,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 222.25 135.89 0)
 			(effects
 				(font
