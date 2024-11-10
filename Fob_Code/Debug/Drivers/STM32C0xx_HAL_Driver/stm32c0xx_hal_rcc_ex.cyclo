@@ -1,0 +1,5 @@
+C:/Users/mggam/STM32Cube/Repository/STM32Cube_FW_C0_V1.2.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c:94:19:HAL_RCCEx_PeriphCLKConfig	15
+C:/Users/mggam/STM32Cube/Repository/STM32Cube_FW_C0_V1.2.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c:240:6:HAL_RCCEx_GetPeriphCLKConfig	1
+C:/Users/mggam/STM32Cube/Repository/STM32Cube_FW_C0_V1.2.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c:287:10:HAL_RCCEx_GetPeriphCLKFreq	31
+C:/Users/mggam/STM32Cube/Repository/STM32Cube_FW_C0_V1.2.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c:473:6:HAL_RCCEx_EnableLSCO	1
+C:/Users/mggam/STM32Cube/Repository/STM32Cube_FW_C0_V1.2.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c:498:6:HAL_RCCEx_DisableLSCO	1
